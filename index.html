@@ -9,7 +9,26 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
 </head>
 <body>
-  
+  <h1 id="reaction"></h1>
+  <div class="form">
+    <form id="rock-paper-scissors">
+      <div class="form-group">
+        <select name="choice" id="choice" class="custom-select custom-select-lg mb-3">
+          <option selected>Select...</option>
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Play!</button>
+    </form>
+
+  </div>
+  <div class="points">
+    <p>Your Points:<span id="human-points">0</span></p>
+    <p>Computer Points:<span id="computer-points">0</span></p>
+  </div>
+
   <script src="js/Game.js"></script>
   <script src="js/Player.js"></script>
   <script src="js/jquery-3.3.1.js"></script>
